@@ -23,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeB-EM-2zy">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeB-EM-2zy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDg-wg-nat">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
@@ -48,7 +48,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aw3-Fi-1P6">
-                                <rect key="frame" x="315" y="605" width="50" height="50"/>
+                                <rect key="frame" x="315" y="603" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5SD-Sj-rEa"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Ee1-18-71a"/>
@@ -60,22 +60,24 @@
                                     <action selector="centerMapButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vok-R6-Jy9"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hwx-JV-gfP">
-                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwx-JV-gfP">
+                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dIo-82-e09"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aw3-Fi-1P6" secondAttribute="trailing" constant="10" id="3tQ-A6-6qE"/>
                             <constraint firstItem="VeB-EM-2zy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Afq-05-PhU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aw3-Fi-1P6" secondAttribute="trailing" constant="12" id="C1b-A8-ilV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aw3-Fi-1P6" secondAttribute="bottom" constant="12" id="EdA-9n-aRD"/>
+                            <constraint firstItem="hwx-JV-gfP" firstAttribute="top" secondItem="aw3-Fi-1P6" secondAttribute="bottom" constant="13" id="Axc-4Q-qzj"/>
                             <constraint firstItem="hwx-JV-gfP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HRF-9x-On2"/>
                             <constraint firstItem="VeB-EM-2zy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PMs-E2-Ub7"/>
                             <constraint firstAttribute="bottom" secondItem="hwx-JV-gfP" secondAttribute="bottom" id="WRe-ct-wRI"/>
                             <constraint firstItem="hwx-JV-gfP" firstAttribute="top" secondItem="VeB-EM-2zy" secondAttribute="bottom" id="fkI-MH-Ko6"/>
                             <constraint firstItem="aDg-wg-nat" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g2g-RJ-PDL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aw3-Fi-1P6" secondAttribute="trailing" constant="10" id="god-Qm-sPX"/>
                             <constraint firstItem="aDg-wg-nat" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nb3-L5-cF7"/>
                             <constraint firstItem="aDg-wg-nat" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pur-bB-ViG"/>
                             <constraint firstItem="hwx-JV-gfP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ueJ-p0-Pqf"/>
@@ -85,6 +87,8 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="VeB-EM-2zy" id="Rfg-aq-4pt"/>
+                        <outlet property="pullUpView" destination="hwx-JV-gfP" id="Pk2-L7-WVa"/>
+                        <outlet property="pullUpViewHeightConstraint" destination="dIo-82-e09" id="l9M-FP-T1u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
