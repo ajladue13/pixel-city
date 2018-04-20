@@ -15,6 +15,8 @@
 		1480DF852021572B00643AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1480DF832021572B00643AA7 /* LaunchScreen.storyboard */; };
 		1480DF902021572B00643AA7 /* pixel_cityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480DF8F2021572B00643AA7 /* pixel_cityTests.swift */; };
 		1480DF9B2021572C00643AA7 /* pixel_cityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480DF9A2021572C00643AA7 /* pixel_cityUITests.swift */; };
+		14A65F792089660200C336CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A65F782089660200C336CB /* Constants.swift */; };
+		14A65F7B2089819100C336CB /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A65F7A2089819100C336CB /* PopVC.swift */; };
 		14C11C6B2022B3E5009D1487 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C11C6A2022B3E5009D1487 /* PhotoCell.swift */; };
 		2CAFBE90529E35C32374AF97 /* Pods_pixel_city.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D8387CD8EC2666B6C12A10 /* Pods_pixel_city.framework */; };
 		4839034BCE2FB73E070FA074 /* Pods_pixel_cityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B71E0012B2CEF0E4F5C3354 /* Pods_pixel_cityTests.framework */; };
@@ -53,6 +55,8 @@
 		1480DF962021572C00643AA7 /* pixel-cityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pixel-cityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1480DF9A2021572C00643AA7 /* pixel_cityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pixel_cityUITests.swift; sourceTree = "<group>"; };
 		1480DF9C2021572C00643AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14A65F782089660200C336CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		14A65F7A2089819100C336CB /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 		14C11C6A2022B3E5009D1487 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		4B71E0012B2CEF0E4F5C3354 /* Pods_pixel_cityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixel_cityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E687EC28282A5CDC2576136 /* Pods-pixel-cityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixel-cityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixel-cityTests/Pods-pixel-cityTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				1480DF7C2021572B00643AA7 /* MapVC.swift */,
+				14A65F7A2089819100C336CB /* PopVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 		1480DFAB202157FD00643AA7 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				14A65F782089660200C336CB /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -275,7 +281,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Alex LaDue";
 				TargetAttributes = {
 					1480DF762021572B00643AA7 = {
@@ -484,6 +490,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A65F7B2089819100C336CB /* PopVC.swift in Sources */,
+				14A65F792089660200C336CB /* Constants.swift in Sources */,
 				14C11C6B2022B3E5009D1487 /* PhotoCell.swift in Sources */,
 				1480DF7D2021572B00643AA7 /* MapVC.swift in Sources */,
 				1480DF7B2021572B00643AA7 /* AppDelegate.swift in Sources */,
@@ -556,6 +564,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -563,6 +572,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -613,6 +623,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -620,6 +631,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
